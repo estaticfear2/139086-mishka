@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вячеслав Сливка](https://up.htmlacademy.ru/adaptive/13/user/139086).
-* Наставник: `Неизвестно`.
+* Наставник: `Нет`.
 
 ---
 
