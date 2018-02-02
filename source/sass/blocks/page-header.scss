@@ -1,0 +1,17 @@
+.page-header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+}
+
+.page-header__legend {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 668px;
+  }
+}

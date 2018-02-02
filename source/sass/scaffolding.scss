@@ -1,0 +1,12 @@
+body {
+  min-width: 320px;
+  font-family: "Open sans", "Arial", sans-serif;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

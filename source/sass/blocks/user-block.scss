@@ -1,0 +1,8 @@
+.user-block {
+  @include clear-list;
+}
+
+.user-block__item {
+  padding: 24px 10px 30px 75px;
+  border-top: 1px solid $gray-light;
+}

@@ -1,0 +1,70 @@
+.features {
+  padding: 0 30px;
+  margin-bottom: 37px;
+}
+
+.features__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.features__list {
+  @include clear-list;
+}
+
+.features__item {
+  position: relative;
+  padding: 64px 0 19px 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--ecology::before {
+    height: 37px;
+    background-image: url('../img/icon-feature-flower.svg');
+  }
+
+  &--style::before {
+    top: 11px;
+    height: 27px;
+    background-image: url('../img/icon-feature-money.svg');
+  }
+
+  &--likes::before {
+    top: 16px;
+    height: 27px;
+    background-image: url('../img/icon-feature-heart.svg');
+  }
+
+  &--ball::before {
+    top: 14px;
+    left: -4px;
+    height: 34px;
+    background-image: url('../img/icon-feature-ball.svg');
+  }
+
+  &--rocket::before {
+    top: 14px;
+    left: -7px;
+    height: 23px;
+    width: 55px;
+    background-image: url('../img/icon-feature-rocket.svg');
+  }
+
+  &--gift::before {
+    top: 12px;
+    left: -5px;
+    height: 33px;
+    background-image: url('../img/icon-feature-gift.svg');
+  }
+}
