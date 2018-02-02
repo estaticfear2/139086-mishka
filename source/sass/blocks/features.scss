@@ -21,7 +21,7 @@
   font-weight: 700;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     width: 48px;
@@ -31,26 +31,26 @@
 
   &--ecology::before {
     height: 37px;
-    background-image: url('../img/icon-feature-flower.svg');
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--style::before {
     top: 11px;
     height: 27px;
-    background-image: url('../img/icon-feature-money.svg');
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--likes::before {
     top: 16px;
     height: 27px;
-    background-image: url('../img/icon-feature-heart.svg');
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--ball::before {
     top: 14px;
     left: -4px;
     height: 34px;
-    background-image: url('../img/icon-feature-ball.svg');
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--rocket::before {
@@ -58,13 +58,13 @@
     left: -7px;
     height: 23px;
     width: 55px;
-    background-image: url('../img/icon-feature-rocket.svg');
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift::before {
     top: 12px;
     left: -5px;
     height: 33px;
-    background-image: url('../img/icon-feature-gift.svg');
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }

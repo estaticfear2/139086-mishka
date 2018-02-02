@@ -41,7 +41,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 50px;
     height: 26px;
@@ -53,11 +53,11 @@
 }
 
 .reviews__next-btn::before {
-  background-image: url('../img/icon-right-arrow.svg');
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 .reviews__prev-btn::before {
-  background-image: url('../img/icon-left-arrow.svg');
+  background-image: url("../img/icon-left-arrow.svg");
 }
 
 .reviews__message {
