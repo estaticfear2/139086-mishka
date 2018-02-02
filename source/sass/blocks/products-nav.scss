@@ -1,0 +1,15 @@
+.products-nav {
+  @include clear-list;
+
+  background-image: linear-gradient(to bottom, #63d1bb 50%, #56c3b2 50%);
+}
+
+.products-nav__link {
+  display: block;
+  padding: 24px 160px 31px 30px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}

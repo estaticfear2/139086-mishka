@@ -1,0 +1,45 @@
+.making {
+  width: 258px;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-bottom: 31px;
+  border: 1px solid #ececec;
+}
+
+.making__title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 88px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 32px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.making__img {
+  width: 258px;
+  height: 150px;
+}
+
+.making__description {
+  padding: 12px 33px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.making__btn {
+  width: auto;
+  margin: 0 33px;
+}

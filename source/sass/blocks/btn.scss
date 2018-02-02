@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px;
+  width: 100%;
+  border: 2px solid #444444;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  text-align: center;
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  &--half {
+    display: inline-block;
+    width: 50%;
+  }
+}
