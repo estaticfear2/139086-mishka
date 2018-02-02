@@ -105,11 +105,11 @@
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
+}
 
-  &:placeholder {
+.form-field__textarea::placeholder {
     color: #444444;
   }
-}
 
 .form-field__memo {
   font-size: 14px;
