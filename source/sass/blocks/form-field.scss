@@ -101,15 +101,15 @@
   overflow: auto;
   border: 2px solid #444444;
   padding: 15px;
-  font-family:  "Open sans", "Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
 }
 
 .form-field__textarea::placeholder {
-    color: #444444;
-  }
+  color: #444444;
+}
 
 .form-field__memo {
   font-size: 14px;
