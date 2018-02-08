@@ -69,14 +69,14 @@
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
   }
-  
+
   &:hover {
     background-color: #ffffff;
     &::before {
       opacity: 0.6;
     }
   }
-  
+
   &:active {
     &::before {
       opacity: 0.3;

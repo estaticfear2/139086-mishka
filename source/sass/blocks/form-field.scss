@@ -77,11 +77,11 @@
     background-repeat: no-repeat;
     background-position: -4px -7px;
   }
-  
+
   &:hover:before {
     border-color: #62d1ba;
   }
-  
+
   &:active::before {
     border-color: rgba(68, 68, 68, 0.3);
   }
@@ -115,7 +115,7 @@
     color: #444444;
     opacity: 0.3;
   }
-  
+
   &:focus {
     outline: none;
     border-color: #62d1ba;
@@ -133,7 +133,7 @@
   line-height: 18px;
   color: #444444;
   box-sizing: border-box;
-  
+
   &:focus {
     outline: none;
     border-color: #62d1ba;
