@@ -1,33 +1,38 @@
-.contacts {
-  padding: 0 30px;
-}
-
 .contacts__title {
-  margin-bottom: 25px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
 }
 
 .contacts__list {
+  width: 260px;
+  margin: 0 auto;
   border-collapse: collapse;
+  border-spacing: 0;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-  vertical-align: top;
 }
 
 .contacts__type {
   width: 76px;
+  padding: 0;
   padding-bottom: 30px;
   vertical-align: top;
 }
 
 .contacts__value {
   width: 80px;
+  padding: 0;
+  vertical-align: top;
 
   a {
+    display: block;
+    padding-bottom: 1px;
     color: #444444;
     text-decoration: none;
     border-bottom: 1px solid #63d1bb;
@@ -35,9 +40,111 @@
 }
 
 .contacts__map {
-  margin-bottom: 36px;
+  width: 320px;
+  margin: 0 auto 36px auto;
 }
 
 .contacts__message {
+  width: 260px;
   font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    position: relative;
+    width: 668px;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      top: 50%;
+      right: 3px;
+      transform: translateY(-50%);
+      background-image: url("../img/icon-flag.svg");
+    }
+  }
+
+  .contacts__list {
+    width: 668px;
+    font-size: 17px;
+    margin-bottom: 58px;
+
+    tbody {
+      display: flex;
+    }
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__value {
+    width: auto;
+  }
+
+  .contacts__map {
+    width: 768px;
+    margin-bottom: 51px;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .contacts__message {
+    width: 230px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__wrap {
+    width: 350px;
+    margin-left: 175px;
+    margin-bottom: 23px;
+    padding-top: 70px;
+  }
+
+  .contacts__title {
+    width: auto;
+    margin-right: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__list {
+    width: auto;
+    margin-left: 0;
+
+    tbody {
+      flex-direction: column;
+    }
+  }
+
+  .contacts__item {
+    width: 100%;
+  }
+
+  .contacts__map {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 525px;
+  }
+
+  .contacts__message {
+    margin-left: 175px;
+//    margin-right: auto;
+  }
 }

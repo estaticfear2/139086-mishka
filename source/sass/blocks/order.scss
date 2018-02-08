@@ -1,12 +1,12 @@
 .order__title {
   margin: 0;
   margin-bottom: 22px;
-  padding: 71px 0 77px 0;
+  padding: 70px 0 75px 0;
   background-color: #f1f1f1;
 }
 
 .order__description {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
@@ -50,4 +50,165 @@
 .order__item--message {
   padding-top: 23px;
   padding-bottom: 11px;
+}
+
+.order__memo {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.order__btn {
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    width: 768px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .order__title {
+    position: relative;
+    margin-bottom: 75px;
+    padding: 22px 0 80px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+      z-index: 1;
+    }
+  }
+
+  .order__description {
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__form {
+    position: relative;
+    width: 768px;
+  }
+
+  .order__item {
+    position: relative;
+    border: none;
+    padding-left: 217px;
+    padding-top: 49px;
+    padding-bottom: 10px;
+  }
+
+  .order__item--color-pading {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order__item--author-padding {
+    padding-right: 50px;
+    padding-top: 49px;
+    padding-left: 137px;
+    padding-bottom: 28px;
+  }
+
+  .order__item--phone {
+    background-color: #f1f1f1;
+    padding-right: 50px;
+    padding-top: 49px;
+    padding-bottom: 0;
+  }
+
+  .order__item--mail {
+    background-color: #f1f1f1;
+    padding-top: 23px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order__item--message {
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+
+  .order__memo {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__btn {
+    width: 230px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1150px;
+  }
+
+  .order__title {
+    padding-top: 20px;
+    padding-bottom: 105px;
+    margin-bottom: 120px;
+  }
+
+  .order__title::before {
+    height: 34px;
+    background-size: auto;
+  }
+
+  .order__description {
+    padding: 0 225px;
+  }
+
+  .order__form {
+    width: 1150px;
+  }
+
+  .order__item {
+    padding-left: 225px;
+  }
+
+  .order__item--author-padding {
+    padding-left: 147px;
+    padding-right: 224px;
+  }
+
+  .order__item--phone {
+    padding-left: 200px;
+    padding-right: 248px;
+  }
+
+  .order__item--mail {
+    padding-left: 200px;
+    padding-right: 248px;
+  }
+
+  .order__item--message {
+    padding-right: 224px;
+  }
+
+  .order__memo {
+    bottom: 13px;
+    right: 222px;
+  }
+
+  .order__btn {
+    margin-top: 37px;
+    margin-left: 225px;
+  }
 }

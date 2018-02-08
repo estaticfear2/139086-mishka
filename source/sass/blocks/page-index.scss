@@ -1,0 +1,30 @@
+//.page-index--zigzag::after {
+//  content: "";
+//  position: absolute;
+//  bottom: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 6px;
+//  background-image: url("../img/bg-zigzag-line.svg");
+//  background-repeat: repeat;
+//  background-size: auto 6px;
+//}
+//
+//@media (min-width: $tablet-width) {
+//  .page-index--zigzag::after {
+//    height: 17px;
+//    background-size: auto 17px;
+//  }
+//}
+//
+@media (min-width: $desktop-width) {
+  .page-index__content {
+    width: 1050px;
+    margin: 0 auto;
+  }
+//
+//  .page-index--zigzag::after {
+//    height: 23px;
+//    background-size: auto 23px;
+//  }
+}

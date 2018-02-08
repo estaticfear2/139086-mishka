@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  line-height: 34px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+
+  svg {
+    margin-left: 28px;
+  }
+  
+  &:hover svg {
+    fill: #46c1ae;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
+}

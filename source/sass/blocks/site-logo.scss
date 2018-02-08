@@ -3,3 +3,17 @@
   width: 86px;
   height: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .site-logo {
+    width: 113px;
+    height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-logo {
+    width: 149px;
+    height: 72px;
+  }
+}

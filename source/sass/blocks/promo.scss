@@ -1,3 +1,37 @@
 .promo {
-  margin-bottom: 71px;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.promo__item {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-bottom: 70px;
+    margin-bottom: 48px;
+  }
+
+  .promo__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin-bottom: 60px;
+    padding-bottom: 94px;
+  }
+
+  .promo__item {
+    padding-top: 52px;
+    justify-content: flex-start;
+  }
 }

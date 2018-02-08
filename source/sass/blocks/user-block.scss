@@ -6,3 +6,15 @@
   padding: 24px 10px 30px 75px;
   border-top: 1px solid $gray-light;
 }
+
+@media (min-width: $tablet-width) {
+  .user-block__item {
+    padding: 30px 1px 35px 81px;
+    border: none;
+    border-left: 1px solid $gray-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
