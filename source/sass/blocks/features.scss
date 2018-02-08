@@ -1,6 +1,6 @@
 .features {
-  padding: 0 30px;
-  margin-bottom: 37px;
+  width: 260px;
+  margin: 0 auto 37px auto;
 }
 
 .features__title {
@@ -23,7 +23,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 12px;
     width: 48px;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,5 +66,111 @@
     left: -5px;
     height: 33px;
     background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: 668px;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 67px 0 45px 0;
+
+    &--ecology::before {
+      top: 13px;
+    }
+
+    &--ball {
+      order: 1;
+
+      &::before {
+        top: 16px;
+      }
+    }
+
+    &--style {
+      order: 2;
+
+      &::before {
+        top: 15px;
+      }
+    }
+
+    &--rocket {
+      order: 3;
+
+      &::before {
+        top: 17px;
+      }
+    }
+
+    &--likes {
+      order: 4;
+
+      &::before {
+        top: 19px;
+      }
+    }
+
+    &--gift {
+      order: 5;
+
+      &::before {
+        top: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: 700px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__item {
+    padding: 60px 0 52px 0;
+
+    &--ecology::before {
+      top: 4px;
+    }
+
+    &--ball::before {
+      top: 8px;
+    }
+
+    &--style::before {
+      top: 7px;
+    }
+
+    &--rocket::before {
+      top: 9px;
+    }
+
+    &--likes::before {
+      top: 12px;
+    }
+
+    &--gift::before {
+      top: 7px;
+    }
   }
 }

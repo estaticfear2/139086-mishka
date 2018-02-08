@@ -13,5 +13,26 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 668px;
+    border: none;
+  }
+
+  .page-header__legend {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
+
+  .page-header__legend {
+    right: 49px;
+    bottom: 32px;
   }
 }
