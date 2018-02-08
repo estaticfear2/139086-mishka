@@ -78,7 +78,7 @@
     background-position: -4px -7px;
   }
 
-  &:hover:before {
+  &:hover::before {
     border-color: #62d1ba;
   }
 
@@ -202,7 +202,7 @@
       left: 11px;
       width: 33px;
       height: 22px;
-      background-position: 0px 0px;
+      background-position: 0 0;
       background-size: 33px 22px;
     }
   }

@@ -35,7 +35,7 @@
     padding: 11px 19px 10px 0;
 
     &:last-child {
-      padding-right: 0px;
+      padding-right: 0;
     }
   }
 }
@@ -66,6 +66,7 @@
   .promo-product {
     position: relative;
   }
+
   .promo-product__wrap {
     width: 50%;
     padding-top: 49px;
@@ -125,6 +126,7 @@
   .promo-product {
     width: 1050px;
   }
+
   .promo-product__title {
     font-size: 53px;
     line-height: 57px;

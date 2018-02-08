@@ -3,7 +3,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-page__header:before {
+  .catalog-page__header::before {
     content: "";
     position: absolute;
     bottom: 0;

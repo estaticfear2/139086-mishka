@@ -4,7 +4,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-form__header:before {
+  .page-form__header::before {
     content: "";
     position: absolute;
     bottom: 0;
