@@ -24,4 +24,12 @@
     width: 23px;
     height: 20px;
   }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
