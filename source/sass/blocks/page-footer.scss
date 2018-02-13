@@ -22,10 +22,11 @@
   padding: 0;
   margin: 0 auto;
   padding-bottom: 26px;
+  padding-right: 6px;
 }
 
 .page-footer__copyright {
-  padding-top: 19px;
+  padding-top: 15px;
   padding-bottom: 25px;
 }
 
@@ -71,8 +72,9 @@
     width: 1050px;
   }
 
-  .page-footer__logo-link img {
+  .page-footer__logo-link svg {
     padding-top: 14px;
+    padding-left: 3px;
   }
 
   .page-footer__social {

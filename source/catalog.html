@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка - Каталог товаров</title>
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка - Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="catalog-page">
 
@@ -36,14 +36,14 @@
         </ul>
         <ul class="main-nav__user-block user-block">
           <li>
-            <a href="#" class="user-block__item link link--icon link--icon-search link--text-hidden">
-              <svg class="" width="21" height="18"><use xlink:href="#icon-search"></use></svg>
+            <a href="#" class="user-block__item link link--text-hidden">
+              <svg class="link__icon" width="21" height="18"><use xlink:href="#icon-search"></use></svg>
               Поиск по сайту
             </a>
           </li>
           <li>
-            <a href="#" class="user-block__item link link--icon link--icon-basket">
-              <svg class="" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+            <a href="#" class="user-block__item link link--text-size">
+              <svg class="link__icon" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
               Корзина:
               <span class="user-block__basket-value">пока пуста</span>
             </a>
@@ -137,16 +137,19 @@
 
       <section class="making">
         <h2 class="making__title">Процесс производства</h2>
-        <picture class="making__wrap">
+        <div class="making__video video">
+          <picture class="video__wrap">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="">
+          </picture>
+          <button type="button" class="video__play-btn"></button>
+        </div>
 
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="making__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="">
-        </picture>
         <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
         <a href="" class="making__btn btn">Сделать заказ</a>
       </section>

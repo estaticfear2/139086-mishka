@@ -1,11 +1,14 @@
 .order__title {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 22px;
   padding: 70px 0 75px 0;
   background-color: #f1f1f1;
 }
 
 .order__description {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 23px;
   padding: 0 30px;
   font-size: 13px;
@@ -38,11 +41,13 @@
 }
 
 .order__item--phone {
+  position: relative;
   padding-top: 5px;
   padding-bottom: 30px;
 }
 
 .order__item--mail {
+  position: relative;
   padding-top: 5px;
   padding-bottom: 30px;
 }

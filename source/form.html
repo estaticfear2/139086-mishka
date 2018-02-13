@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка - Форма заказа</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-form">
 
@@ -35,15 +36,15 @@
         </ul>
         <ul class="main-nav__user-block user-block">
           <li>
-            <a href="#" class="user-block__item link link--icon link--icon-search link--text-hidden">
-              <svg class="" width="21" height="18">     <use xlink:href="#icon-search"></use></svg>
+            <a href="#" class="user-block__item link link--text-hidden">
+              <svg class="link__icon" width="21" height="18"><use xlink:href="#icon-search"></use></svg>
               Поиск по сайту
             </a>
           </li>
           <li>
-            <a href="#" class="user-block__item link link--icon link--icon-basket">
-               <svg class="" width="21" height="18">     <use xlink:href="#icon-cart"></use></svg>
-               Корзина:
+            <a href="#" class="user-block__item link link--text-size">
+              <svg class="link__icon" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+              Корзина:
               <span class="user-block__basket-value">пока пуста</span>
             </a>
           </li>
@@ -101,14 +102,14 @@
 
         <fieldset class="order__item order__item--phone form-field">
           <legend class="form-field__title form-field__title--pos-top">тел</legend>
-          <input type="text" class="form-field__text form-field__text--icon form-field__text--icon-phone" placeholder="+7 ХХХ ХХ ХХ*">
-          <svg class="" width="102" height="34"><use xlink:href="#icon-phone"></use></svg>
+          <input type="text" class="form-field__text form-field__text--icon" placeholder="+7 ХХХ ХХ ХХ*">
+          <svg class="form-field__icon" width="102" height="34"><use xlink:href="#icon-phone"></use></svg>
         </fieldset>
 
         <fieldset class="order__item order__item--mail form-field">
           <legend class="form-field__title form-field__title--pos-middle">E-mail</legend>
-          <input type="text" class="form-field__text form-field__text--icon form-field__text--icon-mail" placeholder="Ваш Email*">
-          <svg class="" width="102" height="34"><use xlink:href="#icon-mail"></use></svg>
+          <input type="text" class="form-field__text form-field__text--icon" placeholder="Ваш Email*">
+          <svg class="form-field__icon form-field__icon--mail" width="102" height="34"><use xlink:href="#icon-mail"></use></svg>
         </fieldset>
 
         <fieldset class="order__item order__item--message form-field">

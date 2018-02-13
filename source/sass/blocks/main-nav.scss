@@ -59,10 +59,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100vw;
+      left: -50px;
+      width: 768px;
       height: 1px;
       background-color: $gray-light;
-      left: calc((100% - 100vw) / 2);
     }
   }
 

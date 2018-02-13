@@ -79,11 +79,7 @@ gulp.task("clean", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
