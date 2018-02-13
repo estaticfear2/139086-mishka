@@ -53,16 +53,6 @@
     flex-direction: column;
   }
 
-  .making__wrap {
-    margin-bottom: 16px;
-    order: -1;
-  }
-
-  .making__img {
-    width: 668px;
-    height: auto;
-  }
-
   .making__title {
     padding-left: 105px;
     font-size: 20px;
@@ -71,6 +61,11 @@
       top: -3px;
       left: 42px;
     }
+  }
+
+  .making__video {
+    margin-bottom: 16px;
+    order: -1;
   }
 
   .making__description {
@@ -105,15 +100,10 @@
     }
   }
 
-  .making__wrap {
+  .making__video {
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  .making__img {
-    width: 682px;
-    height: 455px;
   }
 
   .making__description {

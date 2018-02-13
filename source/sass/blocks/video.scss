@@ -1,0 +1,43 @@
+.video {
+  position: relative;
+}
+
+.video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  background: url("../img/icon-play.svg") no-repeat;
+  transition: 0.1s;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video__img {
+    width: 668px;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: absolute;
+  }
+
+  .video__img {
+    width: 682px;
+    height: 455px;
+  }
+}

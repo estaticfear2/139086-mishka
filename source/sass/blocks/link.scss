@@ -6,11 +6,11 @@
   font-weight: 700;
   color: black;
   text-decoration: none;
-  
+
   &:hover {
     opacity: 0.6;
   }
-  
+
   &:active {
     opacity: 0.3;
   }
@@ -20,24 +20,13 @@
   display: none;
 }
 
-.link--icon::before {
-  content: "";
+.link__icon {
   position: absolute;
   width: 21px;
   height: 18px;
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.link--icon-search::before {
-  background-image: url("../img/icon-search.svg");
-}
-
-.link--icon-basket::before {
-  background-image: url("../img/icon-cart.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -45,7 +34,7 @@
     font-size: 15px;
   }
 
-  .link--icon {
+  .link--text-size {
     font-size: 17px;
   }
 

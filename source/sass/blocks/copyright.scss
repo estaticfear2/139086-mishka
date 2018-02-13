@@ -10,12 +10,14 @@
 
   svg {
     margin-left: 28px;
+    margin-top: 7px;
+    fill: #63d1bb;
   }
-  
+
   &:hover svg {
     fill: #46c1ae;
   }
-  
+
   &:active {
     opacity: 0.3;
   }

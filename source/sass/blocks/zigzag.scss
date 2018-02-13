@@ -2,8 +2,9 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
   height: 6px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat;
@@ -12,6 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .zigzag::after {
+    width: 768px;
     height: 17px;
     background-size: auto 17px;
   }
@@ -19,6 +21,7 @@
 
 @media (min-width: $desktop-width) {
   .zigzag::after {
+    width: 1250px;
     height: 23px;
     background-size: auto 23px;
   }
