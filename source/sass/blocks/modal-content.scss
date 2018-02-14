@@ -1,5 +1,15 @@
 .modal-content {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+.modal-content__wrap {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -12,7 +22,7 @@
   background-color: #ffffff;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  z-index: 3;
 }
 
 .modal-content--close {
@@ -76,7 +86,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal-content {
+  .modal-content__wrap {
     width: 356px;
     padding: 34px 105px 45px;
     border: 1px solid #c6c6c6;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2">
   </head>
   <body class="page-index">
 
@@ -99,7 +100,7 @@
               <img class="promo-product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
             </picture>
             <span class="promo-product__price">Цена: 990 руб.</span>
-            <a href="#" class="promo-product__buy-link btn">Заказать</a>
+            <a href="add-to-cart.html" class="promo-product__buy-link btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -153,7 +154,7 @@
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64977583528247!2d30.322536129273107!3d59.938794198867264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1517275555787" width="320" height="457" style="border:0" allowfullscreen></iframe>
         </div>
-        <a href="" class="contacts__message btn">Напишите нам</a>
+        <a href="#" class="contacts__message btn">Напишите нам</a>
       </section>
 
     </main>
@@ -187,17 +188,19 @@
     </footer>
 
     <div class="modal-content modal-content--close">
-      <div class="modal-content__title">Добавить в корзину</div>
-      <div class="modal-content__text">Выберите размер:</div>
-      <form action="https://echo.htmlacademy.ru" class="modal-content__form" method="post">
-        <input class="modal-content__item" type="radio" id="size-s" name="size" value="size-s" checked>
-        <label class="modal-content__label" for="size-s">S</label>
-        <input class="modal-content__item" type="radio" id="size-m" name="size" value="size-s">
-        <label class="modal-content__label" for="size-m">M</label>
-        <input class="modal-content__item" type="radio" id="size-l" name="size" value="size-s">
-        <label class="modal-content__label" for="size-l">L</label>
-        <button class="modal-content__add-btn" type="submit">Добавить</button>
-      </form>
+      <div class="modal-content__wrap">
+        <div class="modal-content__title">Добавить в корзину</div>
+        <div class="modal-content__text">Выберите размер:</div>
+        <form action="https://echo.htmlacademy.ru" class="modal-content__form" method="post">
+          <input class="modal-content__item" type="radio" id="size-s" name="size" value="size-s" checked>
+          <label class="modal-content__label" for="size-s">S</label>
+          <input class="modal-content__item" type="radio" id="size-m" name="size" value="size-s">
+          <label class="modal-content__label" for="size-m">M</label>
+          <input class="modal-content__item" type="radio" id="size-l" name="size" value="size-s">
+          <label class="modal-content__label" for="size-l">L</label>
+          <button class="modal-content__add-btn" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
 
     <script src="js/picturefill.min.js"></script>

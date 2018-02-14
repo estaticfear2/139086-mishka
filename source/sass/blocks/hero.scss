@@ -52,7 +52,6 @@
   .hero {
     margin-bottom: 73px;
     padding-top: 80px;
-//    background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -75px;
 
     &::before {
@@ -60,11 +59,6 @@
       height: 34px;
       background-size: auto;
     }
-
-//    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-//      background-image: url("../img/hero-desktop@2x.jpg");
-//      background-size: 1150px auto;
-//    }
   }
 
   .hero__title {
