@@ -8,7 +8,9 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -50px;
+    width: 768px;
+
     height: 71px;
     background-color: #f1f1f1;
   }
@@ -21,6 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .page-form__header::before {
+    width: 1150px;
+    left: 0;
     height: 74px;
   }
 

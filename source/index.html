@@ -99,7 +99,7 @@
               <img class="promo-product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
             </picture>
             <span class="promo-product__price">Цена: 990 руб.</span>
-            <a href="#" class="promo-product__by-link btn">Заказать</a>
+            <a href="#" class="promo-product__buy-link btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -185,6 +185,20 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-content modal-content--close">
+      <div class="modal-content__title">Добавить в корзину</div>
+      <div class="modal-content__text">Выберите размер:</div>
+      <form action="https://echo.htmlacademy.ru" class="modal-content__form" method="post">
+        <input class="modal-content__item" type="radio" id="size-s" name="size" value="size-s" checked>
+        <label class="modal-content__label" for="size-s">S</label>
+        <input class="modal-content__item" type="radio" id="size-m" name="size" value="size-s">
+        <label class="modal-content__label" for="size-m">M</label>
+        <input class="modal-content__item" type="radio" id="size-l" name="size" value="size-s">
+        <label class="modal-content__label" for="size-l">L</label>
+        <button class="modal-content__add-btn" type="submit">Добавить</button>
+      </form>
+    </div>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/scripts.js"></script>
