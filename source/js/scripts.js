@@ -32,9 +32,16 @@ var onOverlayClick = function (evt) {
   }
 };
 
-buyLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modal.classList.add('modal-content--open');
-  document.addEventListener('keydown', onEscPress);
-  modal.addEventListener('click', onOverlayClick);
-});
+var currentPage = document.querySelector('body').classList;
+
+if (currentPage.contains('page-index')) {
+  buyLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.add('modal-content--open');
+    document.addEventListener('keydown', onEscPress);
+    modal.addEventListener('click', onOverlayClick);
+  });
+}
+
+
+
