@@ -129,7 +129,6 @@
   }
 
   &:focus {
-    outline: none;
     border-color: #62d1ba;
   }
 }
@@ -162,6 +161,7 @@
   line-height: 18px;
   color: #444444;
   box-sizing: border-box;
+  resize: none;
 
   &:hover {
     border-color: #62d1ba;
@@ -262,6 +262,17 @@
     margin-left: 0;
   }
 
+  .form-field__icon {
+    top: 60px;
+    right: 77px;
+    z-index: 0;
+
+    &--mail {
+      top: 35px;
+      right: 72px;
+    }
+  }
+
   .form-field__textarea {
     padding-top: 13px;
     font-size: 19px;
@@ -285,5 +296,15 @@
   .form-field__text {
     margin-left: 24px;
     padding-left: 18px;
+  }
+
+  .form-field__icon {
+    top: 60px;
+    right: 233px;
+
+    &--mail {
+      top: 35px;
+      right: 229px;
+    }
   }
 }

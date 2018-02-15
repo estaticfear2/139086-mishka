@@ -9,14 +9,6 @@
 .product__link {
   text-decoration: none;
   text-align: left;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .product__img {
@@ -43,6 +35,14 @@
 
   &--margin {
     margin-bottom: 8px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
