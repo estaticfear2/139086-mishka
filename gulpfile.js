@@ -13,7 +13,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
-var run =require("run-sequence");
+var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("style", function() {
@@ -66,7 +66,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/*.{svg,jpg,png,webp}",
-    "source/js/**"
+    "source/js/**",
+    "source/lib/**",
   ], {
     base: "source"
   })

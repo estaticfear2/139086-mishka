@@ -14,6 +14,8 @@
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s;
 
   &::before {
     content: "";
@@ -22,6 +24,14 @@
     transform: translateY(-50%);
     opacity: 0.5;
     z-index: 2;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -34,6 +44,10 @@
     right: 37px;
     background: url("../img/icon-interior.svg") center center no-repeat;
   }
+
+  &:hover {
+    background-color: #59d5bc;
+  }
 }
 
 .products-nav__link--darker {
@@ -44,6 +58,10 @@
     height: 60px;
     right: 27px;
     background: url("../img/icon-toy.svg") center center no-repeat;
+  }
+
+  &:hover {
+    background-color: #46c1ae;
   }
 }
 
@@ -58,9 +76,17 @@
   }
 
   .products-nav__link {
-    padding: 28px 160px 31px 35px;
+    padding: 28px 160px 36px 35px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      bottom: 5px;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .products-nav__link--darker::before {
@@ -74,6 +100,6 @@
   }
 
   .products-nav__link {
-    padding: 28px 305px 31px 35px;
+    padding: 28px 305px 36px 35px;
   }
 }

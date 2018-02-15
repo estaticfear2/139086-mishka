@@ -6,10 +6,13 @@
   font-weight: 700;
   color: black;
   text-decoration: none;
+}
+
+.link[href] {
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
-    
+
     & .link__icon {
       opacity: 1;
       fill: #63d1bb;
@@ -18,7 +21,7 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
-    
+
     & .link__icon {
       opacity: 0.3;
     }

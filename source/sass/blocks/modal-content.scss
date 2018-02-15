@@ -8,6 +8,14 @@
   z-index: 2;
 }
 
+.modal-content--close {
+  display: none;
+}
+
+.modal-content--open {
+  display: block;
+}
+
 .modal-content__wrap {
   position: absolute;
   top: 50%;
@@ -23,14 +31,6 @@
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   z-index: 3;
-}
-
-.modal-content--close {
-  display: none;
-}
-
-.modal-content--open {
-  display: block;
 }
 
 .modal-content__title {
@@ -74,11 +74,11 @@
   font-weight: 700;
   border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
-  
+
   &:hover {
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
-  
+
   &:active {
     border: 2px solid #62d1ba;
   }
@@ -122,5 +122,3 @@
     margin-top: 28px;
   }
 }
-
-

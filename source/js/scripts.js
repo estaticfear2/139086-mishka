@@ -26,7 +26,6 @@ var onEscPress = function (evt) {
 
 var onOverlayClick = function (evt) {
   var clickedElement = evt.target.closest('.modal-content__wrap');
-  
   if (!clickedElement) {
     modal.classList.remove('modal-content--open');
     modal.removeEventListener('click', onOverlayClick);
@@ -36,7 +35,6 @@ var onOverlayClick = function (evt) {
 buyLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal-content--open');
-  
   document.addEventListener('keydown', onEscPress);
   modal.addEventListener('click', onOverlayClick);
 });
