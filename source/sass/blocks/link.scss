@@ -8,11 +8,20 @@
   text-decoration: none;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
+    
+    & .link__icon {
+      opacity: 1;
+      fill: #63d1bb;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
+    
+    & .link__icon {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -27,6 +36,7 @@
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {

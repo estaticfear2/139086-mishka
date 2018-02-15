@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2">
   </head>
   <body class="page-index">
 
@@ -100,7 +101,7 @@
               <img class="promo-product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
             </picture>
             <span class="promo-product__price">Цена: 990 руб.</span>
-            <a href="add-to-cart.html" class="promo-product__buy-link btn">Заказать</a>
+            <a href="add-to-cart.html" class="promo-product__buy-link btn js-add-to-cart">Заказать</a>
           </div>
         </div>
       </div>
@@ -128,8 +129,8 @@
             </li>
           </ul>
           <div class="reviews__slider-controls">
-            <a href="#" class="reviews__prev-btn btn  btn--half"></a>
-            <a href="#" class="reviews__next-btn btn btn--half"></a>
+            <button class="reviews__prev-btn btn  btn--half" type="button"></button>
+            <button class="reviews__next-btn btn btn--half" type="button"></button>
           </div>
           <a href="#" class="reviews__message btn">Написать</a>
         </div>
@@ -142,7 +143,7 @@
             <tr class="contacts__item">
               <td class="contacts__type">e-mail:</td>
               <td class="contacts__value">
-                <a href="mailto:#">info@mimimishkashop.ru</a>
+                <a class="contacts__mail" href="mailto:#">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr class="contacts__item">

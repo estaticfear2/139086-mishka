@@ -2,7 +2,7 @@ var ESC_CODE = 27;
 
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var buyLink = document.querySelector('.promo-product__buy-link');
+var buyLink = document.querySelector('.js-add-to-cart');
 var modal = document.querySelector('.modal-content');
 
 navMain.classList.remove('main-nav--no-js');

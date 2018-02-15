@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка - Каталог товаров</title>
-    <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="catalog-page">
@@ -185,6 +185,22 @@
         </a>
       </div>
     </footer>
+    
+    <div class="modal-content modal-content--close">
+      <div class="modal-content__wrap">
+        <div class="modal-content__title">Добавить в корзину</div>
+        <div class="modal-content__text">Выберите размер:</div>
+        <form action="https://echo.htmlacademy.ru" class="modal-content__form" method="post">
+          <input class="modal-content__item" type="radio" id="size-s" name="size" value="size-s" checked>
+          <label class="modal-content__label" for="size-s">S</label>
+          <input class="modal-content__item" type="radio" id="size-m" name="size" value="size-s">
+          <label class="modal-content__label" for="size-m">M</label>
+          <input class="modal-content__item" type="radio" id="size-l" name="size" value="size-s">
+          <label class="modal-content__label" for="size-l">L</label>
+          <button class="modal-content__add-btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/scripts.js"></script>
