@@ -1,4 +1,6 @@
 (function () {
+  "use strict";
+
   var ESC_CODE = 27;
 
   var navMain = document.querySelector('.main-nav');
@@ -26,7 +28,9 @@
   };
 
   var onOverlayClick = function (evt) {
+    console.log(evt.target.closest('.modal-content__wrap'));
     var clickedElement = evt.target.closest('.modal-content__wrap');
+
     if (!clickedElement) {
       modal.classList.remove('modal-content--open');
       modal.removeEventListener('click', onOverlayClick);
