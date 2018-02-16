@@ -9,7 +9,6 @@
 }
 
 .link[href] {
-
   &:hover {
     color: rgba(0, 0, 0, 0.6);
 
@@ -53,6 +52,7 @@
 
   .link--text-hidden {
     font-size: 0;
+    min-height: 24px;
   }
 }
 

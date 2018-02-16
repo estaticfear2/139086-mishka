@@ -69,10 +69,12 @@
   .products-nav {
     width: 668px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .products-nav__item {
     width: 50%;
+    flex-grow: 1;
   }
 
   .products-nav__link {

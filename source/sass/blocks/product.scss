@@ -32,6 +32,7 @@
   line-height: 24px;
   font-weight: 700;
   color: black;
+  word-wrap: break-word;
 
   &--margin {
     margin-bottom: 8px;
@@ -83,6 +84,7 @@
   }
 
   .product__title {
+    margin-right: 45px;
     font-size: 20px;
   }
 
@@ -116,6 +118,10 @@
     padding-bottom: 25px;
     flex-grow: 2;
     box-sizing: border-box;
+  }
+
+  .product__title {
+    margin-right: 0;
   }
 
   .product__param {
