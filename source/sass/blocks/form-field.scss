@@ -38,7 +38,7 @@
 }
 
 .form-field__item:focus + .form-field__label::before,
-.form-field__item:checked:focus + .form-field__label:before {
+.form-field__item:checked:focus + .form-field__label::before {
   box-shadow: 0 0 0 2px #62d1ba,
     0 0 0 4px #444444;
 }
@@ -96,7 +96,7 @@
   }
 }
 
-.form-field__checkbox:focus + .form-field__label:before {
+.form-field__checkbox:focus + .form-field__label::before {
   border-color: #62d1ba;
 }
 
