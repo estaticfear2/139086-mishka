@@ -22,22 +22,20 @@
 }
 
 .order__item {
-  padding: 0;
-  padding-top: 31px;
-  padding-bottom: 18px;
+  padding: 24px 0 26px;
   margin: 0;
   border: 0;
   border-top: 1px solid #63d1bb;
 }
 
 .order__item--color-padding {
-  padding-bottom: 0;
-  padding-top: 33px;
+  padding-top: 23px;
+  padding-bottom: 10px;
 }
 
 .order__item--author-padding {
-  padding-top: 27px;
-  padding-bottom: 8px;
+  padding-top: 19px;
+  padding-bottom: 16px;
 }
 
 .order__item--phone {
@@ -112,8 +110,8 @@
     position: relative;
     border: none;
     padding-left: 217px;
-    padding-top: 49px;
-    padding-bottom: 10px;
+    padding-top: 27px;
+    padding-bottom: 32px;
   }
 
   .order__item--color-pading {
@@ -122,10 +120,7 @@
   }
 
   .order__item--author-padding {
-    padding-right: 50px;
-    padding-top: 49px;
-    padding-left: 137px;
-    padding-bottom: 28px;
+    padding: 50px 50px 28px 217px;
   }
 
   .order__item--phone {
@@ -143,8 +138,7 @@
   }
 
   .order__item--message {
-    padding-right: 50px;
-    padding-top: 50px;
+    padding: 50px 50px 10px 217px;
   }
 
   .order__memo {
@@ -193,7 +187,7 @@
   }
 
   .order__item--author-padding {
-    padding-left: 147px;
+    padding-left: 227px;
     padding-right: 224px;
   }
 

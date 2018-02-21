@@ -58,7 +58,7 @@
 }
 
 .modal-content__item {
-  display: none;
+  @include visually-hidden;
 }
 
 .modal-content__item:checked + .modal-content__label {
