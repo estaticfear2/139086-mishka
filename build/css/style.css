@@ -2291,7 +2291,7 @@ body {
           box-shadow: 0 0 0 2px #444444; }
 
 .form-field__item:focus + .form-field__label::before,
-.form-field__item:checked:focus + .form-field__label:before {
+.form-field__item:checked:focus + .form-field__label::before {
   -webkit-box-shadow: 0 0 0 2px #62d1ba, 0 0 0 4px #444444;
           box-shadow: 0 0 0 2px #62d1ba, 0 0 0 4px #444444; }
 
@@ -2344,7 +2344,7 @@ body {
   .form-field__checkbox + .form-field__label:active::before {
     border-color: rgba(68, 68, 68, 0.3); }
 
-.form-field__checkbox:focus + .form-field__label:before {
+.form-field__checkbox:focus + .form-field__label::before {
   border-color: #62d1ba; }
 
 .form-field__checkbox:checked + .form-field__label::after {
